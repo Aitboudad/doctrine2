@@ -210,7 +210,7 @@ fields on both sides:
 
 Notice how always both sides of the bidirectional association are
 updated. The previous unidirectional associations were simpler to
-handle.
+handle.c
 
 Removing Associations
 ---------------------
@@ -630,6 +630,11 @@ large collections.
     ;
 
     $birthdayUsers = $userCollection->matching($criteria);
+
+
+.. note::
+
+    Matching Criteria only works on OneToMany associations.
 
 .. tip::
 
